@@ -1,3 +1,4 @@
+alert('الموقع تحت الصيانة ارجع ورا ليكونطرول تلقاه يمشي');
 function calcu() {
 
   var ph1ntd = Number(document.getElementById('ph1ntd').value) ;
