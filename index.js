@@ -2,15 +2,15 @@ function calcu() {
 
   var ph1ntd = Number(document.getElementById('ph1ntd').value) ;
 
-  var ph1intr = Number(document.getElementById('ph1intr').value) ;
+  
 
   var ph1ctrl = Number(document.getElementById('ph1ctrl').value);
 
   var ph1ntp = Number(document.getElementById('ph1ntp').value);
 
-  var ph1nctp = Number(document.getElementById('ph1nctp').value);
 
-  var ph1tt = document.getElementById('ph1tt').value =  Number((ph1ntd+ph1intr)*0.2+(ph1ctrl*0.6)+(ph1ntp*1+ph1nctp*0)*0.2);
+
+  var ph1tt = document.getElementById('ph1tt').value =  Number((ph1ntd)*0.2+(ph1ctrl*0.6)+(ph1ntp*0.2));
 
 
 
