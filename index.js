@@ -26,17 +26,16 @@ function calcu() {
 
   var ch1nctp = Number(document.getElementById('ch1nctp').value);
 
-  var ch1tt = document.getElementById('ch1tt').value = Number((ch1ntd+ch1intr*0)*0.2+(ch1ctrl*0.6)+(ch1ntp*1+ch1nctp*0)*0.2);
+  var ch1tt = document.getElementById('ch1tt').value = Number((ch1ntd+*0.2)+(ch1ctrl*0.6)+(ch1ntp*0.2));
 
 
 
   var info1ntd = Number(document.getElementById('info1ntd').value) ;
 
-  var info1intr = Number(document.getElementById('info1intr').value) ;
 
   var info1ctrl = Number(document.getElementById('info1ctrl').value);
 
-  var info1tt = document.getElementById('info1tt').value = Number(((info1ntd*4+info1intr*6)/5+info1ctrl)/2);
+  var info1tt = document.getElementById('info1tt').value = Number(((info1ntd*4)+(info1ctrl*6));
 
 
 
@@ -44,11 +43,9 @@ function calcu() {
 
     var alg1ntd = Number(document.getElementById('alg1ntd').value) ;
 
-    var alg1intr = Number(document.getElementById('alg1intr').value) ;
-
     var alg1ctrl = Number(document.getElementById('alg1ctrl').value);
 
-    var alg1tt = document.getElementById('alg1tt').value = Number((((alg1ntd+alg1intr*0)*4)+(alg1ctrl*6))/10);
+    var alg1tt = document.getElementById('alg1tt').value = Number(((alg1ntd*4)+(alg1ctrl*6));
 
 
 
@@ -56,11 +53,11 @@ function calcu() {
 
     var ana1ntd = Number(document.getElementById('ana1ntd').value) ;
 
-    var ana1intr = Number(document.getElementById('ana1intr').value) ;
+ 
 
     var ana1ctrl = Number(document.getElementById('ana1ctrl').value);
 
-    var ana1tt = document.getElementById('ana1tt').value = Number((((ana1ntd+ana1intr*0)*4)+(ana1ctrl*6))/10);
+    var ana1tt = document.getElementById('ana1tt').value = Number(((ana1ntd*4)+(ana1ctrl*6));
 
 
 
@@ -68,11 +65,11 @@ function calcu() {
 
     var pro1ntd = Number(document.getElementById('pro1ntd').value) ;
 
-    var pro1intr = Number(document.getElementById('pro1intr').value) ;
+  
 
     var pro1ctrl = Number(document.getElementById('pro1ctrl').value);
 
-    var pro1tt = document.getElementById('pro1tt').value = Number((((pro1ntd+pro1intr*0)*4)+(pro1ctrl*6))/10);
+    var pro1tt = document.getElementById('pro1tt').value = Number(((pro1ntd*4)+(pro1ctrl*6));
 
 
 
