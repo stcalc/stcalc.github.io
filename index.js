@@ -29,13 +29,12 @@ function calcu() {
 
 
 
-  var info1ntd = Number(document.getElementById('info1ntd').value) ;
 
 
 
-  var info1ctrl = Number(document.getElementById('info1ctrl').value);
+  var info1tt = Number(document.getElementById('info1tt').value);
 
-  var info1tt = document.getElementById('info1tt').value = Number((info1ntd+info1ctrl)/2);
+  
 
 
 
