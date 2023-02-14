@@ -30,7 +30,9 @@
     $(document).ready(function(){       
        
 Swal.fire({
- 'اصبر مزال الحال باه تبدا تحسب هته الصفحة لا تزال مغلقة'
+  icon: 'error',
+  text: 'اصبر مزال الحال باه تبدا تحسب هته الصفحة لا تزال مغلقة',
+ 
 })
     });
 </script>
@@ -40,20 +42,26 @@ Swal.fire({
 
 
 
-   <nav class="navbar navbar-expand-lg navbar-light bg-light">
-	  <a class="navbar-brand" href="#">   <img style="width:1px height:1px;" src="sting.png"><b>ST Eng calculator</b></a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-    <div class="navbar-nav">
-	    <a class="nav-item nav-link" href="/index.html"><b>sem 1</b></a>
-	    <a class="nav-item nav-link active" href="#"><b>sem 2</b> </a>
+    <nav class="navbar sticky-top bg-light">
+
+    <div class="container-fluid">
+
+      <a class="navbar-brand" href="#">
+
+      <img style="width:1px height:1px;" src="sting.png">
+
       
 
+      <b>ST ing moyenne calculatrice </b>
+
+      <a class="nav-link" href="index.html">sem1</a>
+  	<a class="nav-link" href="s2.html">sem2</a>
+
+     </a>
+
     </div>
-  </div>
-</nav>
+
+  </nav>
 
 
 
@@ -117,7 +125,7 @@ Swal.fire({
 
                         <td>
 
-                           <input type="number" class="form-control" placeholder="total phi1" onkeyup="calcu()" id="ph1tt">
+                           <input type="number" class="form-control" placeholder="total Elec" onkeyup="calcu()" id="ph1tt">
 
                         </td>
 
@@ -150,7 +158,7 @@ Swal.fire({
 
                         <td>
 
-                           <input type="number" class="form-control" placeholder="total chimi1" onkeyup="calcu()" id="ch1tt">
+                           <input type="number" class="form-control" placeholder="total Thermo" onkeyup="calcu()" id="ch1tt">
 
                         </td>
 
@@ -216,7 +224,7 @@ Swal.fire({
 
                         <td>
 
-                           <input type="number" class="form-control" placeholder="total ALG 1" onkeyup="calcu()" id="alg1tt">
+                           <input type="number" class="form-control" placeholder="total ALG 2" onkeyup="calcu()" id="alg1tt">
 
                         </td>
 
@@ -250,7 +258,7 @@ Swal.fire({
 
                         <td>
 
-                           <input type="number" class="form-control" placeholder="total analyse 1" onkeyup="calcu()" id="ana1tt">
+                           <input type="number" class="form-control" placeholder="total analyse 2" onkeyup="calcu()" id="ana1tt">
 
                         </td>
 
@@ -284,7 +292,7 @@ Swal.fire({
 
                         <td>
 
-                           <input type="number" class="form-control" placeholder="total proba" onkeyup="calcu()" id="pro1tt">
+                           <input type="number" class="form-control" placeholder="total dessin" onkeyup="calcu()" id="pro1tt">
 
                         </td>
 
@@ -345,7 +353,7 @@ Swal.fire({
 
                         <td>
 
-                          <input type="number" class="form-control" placeholder="contrle ethique" onkeyup="calcu()" id="et1tt" >
+                          <input type="number" class="form-control" placeholder="contrle metiers" onkeyup="calcu()" id="et1tt" >
 
                         </td>
 
