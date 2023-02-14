@@ -1,4 +1,4 @@
-alert("ارجو دعواتكم لي لنيل شهادة البكالوريا بمعدل جيد");
+alert(" (yah04dev) الموقع من تطويرالطالب يحي بن عمروش /nارجو دعواتكم لي لنيل شهادة البكالوريا بمعدل جيد");
 function calcu() {
 
   var ph1ntd = Number(document.getElementById('ph1ntd').value) ;
