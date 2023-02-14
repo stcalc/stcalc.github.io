@@ -1,1 +1,537 @@
+<!DOCTYPE html>
 
+<html lang="en" dir="ltr">
+
+  <head>
+
+     <link rel="icon" type="image/x-icon" href="icon.ico">
+
+    <meta charset="utf-8">
+
+    <title>CALCULATRICE st ING</title>
+
+    <!-- CSS only -->
+
+    <script src="jquery.min.js"></script>
+   
+<link href="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/7.33.1/sweetalert2.css" rel="stylesheet" type="text/css">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/7.33.1/sweetalert2.js"></script>
+<link href="bootstrap.min.css" rel="stylesheet">
+
+<!-- JavaScript Bundle with Popper -->
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<script src="bootstrap.bundle.min.js"></script>
+
+<script language="JavaScript" type="text/javascript" src="index2.js"></script>
+<script>
+    $(document).ready(function(){       
+       
+Swal.fire({
+  icon: 'error',
+  text: 'اصبر مزال الحال باه تبدا تحسب هته الصفحة لا تزال مغلقة',
+ 
+})
+    });
+</script>
+  </head>
+
+  <body>
+
+
+
+    <nav class="navbar sticky-top bg-light">
+
+    <div class="container-fluid">
+
+      <a class="navbar-brand" href="#">
+
+      <img style="width:1px height:1px;" src="sting.png">
+
+      
+
+      <b>ST ing moyenne calculatrice </b>
+
+      <a class="nav-link" href="index.html">sem1</a>
+  	<a class="nav-link" href="s2.html">sem2</a>
+
+     </a>
+
+    </div>
+
+  </nav>
+
+
+
+
+
+
+
+
+
+                    <table class="table table-dark table-borderless mb-0 table-responsive" class="thegrid"  >
+
+                      <thead>
+
+                        <tr>
+
+                          <th scope="col">la matiere</th>
+
+                          <th scope="col">la note td/20</th>
+
+                      
+
+                          <th scope="col">Controle</th>
+
+                          <th scope="col">Note TP</th>
+
+                        
+
+                            <th scope="col">la moyenne</th>
+
+                        </tr>
+
+                      </thead>
+
+                      <tbody>
+
+                        <tr>
+
+                          <th scope="row">electricite</th>
+
+                        <td>
+
+                          <input type="number" class="form-control" placeholder="note td /20" onkeyup="calcu()" id="ph1ntd" >
+
+                        </td>
+
+                  
+
+                        <td>
+
+                          <input type="number" class="form-control" placeholder="control /20" onkeyup="calcu()"  id="ph1ctrl">
+
+                        </td>
+
+                        <td>
+
+                          <input type="number" class="form-control" placeholder="note TP /20" onkeyup="calcu()"  id="ph1ntp">
+
+                        </td>
+
+                     
+
+                        <td>
+
+                           <input type="number" class="form-control" placeholder="total phi1" onkeyup="calcu()" id="ph1tt">
+
+                        </td>
+
+                        </tr>
+
+                        <tr>
+
+                          <th scope="row">thermo</th>
+
+                        <td>
+
+                          <input type="number" class="form-control" placeholder="note td /20" onkeyup="calcu()" id="ch1ntd" >
+
+                        </td>
+
+                   
+
+                        <td>
+
+                          <input type="number" class="form-control" placeholder="control /20" onkeyup="calcu()"  id="ch1ctrl">
+
+                        </td>
+
+                        <td>
+
+                          <input type="number" class="form-control" placeholder="note TP /20" onkeyup="calcu()"  id="ch1ntp">
+
+                        </td>
+
+
+                        <td>
+
+                           <input type="number" class="form-control" placeholder="total chimi1" onkeyup="calcu()" id="ch1tt">
+
+                        </td>
+
+                        </tr>
+
+                        <tr>
+                       <tr>
+
+                          <th scope="row">informatique</th>
+
+                        <td>
+
+                          none
+
+                        </td>
+
+                        <td>
+
+                          none
+
+                        </td>
+
+                        <td>
+
+                          none
+
+                        </td>
+
+                  
+
+                        <td>
+
+                           <input type="number" class="form-control" placeholder="note info /20" onkeyup="calcu()" id="info1tt">
+
+                        </td>
+
+                        </tr>
+
+                        <tr>
+
+                          <th scope="row">algebre 2</th>
+
+                        <td>
+
+                          <input type="number" class="form-control" placeholder="note td /20" onkeyup="calcu()" id="alg1ntd" >
+
+                        </td>
+
+
+                        <td>
+
+                          <input type="number" class="form-control" placeholder="control /20" onkeyup="calcu()"  id="alg1ctrl">
+
+                        </td>
+
+                        <td>
+
+                        none
+
+                        </td>
+
+                  
+
+                        <td>
+
+                           <input type="number" class="form-control" placeholder="total ALG 1" onkeyup="calcu()" id="alg1tt">
+
+                        </td>
+
+                        </tr>
+
+                        <tr>
+
+                          <th scope="row">analyse 2</th>
+
+                        <td>
+
+                          <input type="number" class="form-control" placeholder="note td /20" onkeyup="calcu()" id="ana1ntd" >
+
+                        </td>
+
+                    
+
+                        <td>
+
+                          <input type="number" class="form-control" placeholder="control /20" onkeyup="calcu()"  id="ana1ctrl">
+
+                        </td>
+
+                        <td>
+
+                        none
+
+                        </td>
+
+                    
+
+                        <td>
+
+                           <input type="number" class="form-control" placeholder="total analyse 1" onkeyup="calcu()" id="ana1tt">
+
+                        </td>
+
+                        </tr>
+
+                        <tr>
+
+                          <th scope="row">Dessin</th>
+
+                        <td>
+
+                          <input type="number" class="form-control" placeholder="note td /20" onkeyup="calcu()" id="pro1ntd" >
+
+                        </td>
+
+                     
+
+                        <td>
+
+                          <input type="number" class="form-control" placeholder="control /20" onkeyup="calcu()"  id="pro1ctrl">
+
+                        </td>
+
+                        <td>
+
+                        none
+
+                        </td>
+
+                     
+
+                        <td>
+
+                           <input type="number" class="form-control" placeholder="total proba" onkeyup="calcu()" id="pro1tt">
+
+                        </td>
+
+                        </tr>
+
+                        <tr>
+
+                          <th scope="row">englais</th>
+
+                        <td>
+
+                          none
+
+                        </td>
+
+                        <td>
+
+                          none
+
+                        </td>
+
+                        <td>
+
+                          none
+
+                        </td>
+
+                  
+
+                        <td>
+
+                           <input type="number" class="form-control" placeholder="note englais /20" onkeyup="calcu()" id="eng1tt">
+
+                        </td>
+
+                        </tr>
+
+                          <th  scope="row">metiers</th>
+
+                        <td>
+
+                          none
+
+                        </td>
+
+                        <td>
+
+                          none
+
+                        </td>
+
+                        <td>
+
+                          none
+
+                        </td>
+
+
+                        <td>
+
+                          <input type="number" class="form-control" placeholder="contrle ethique" onkeyup="calcu()" id="et1tt" >
+
+                        </td>
+
+                        </tr>
+
+                        <tr>
+
+                          <th  scope="row">total</th>
+
+
+                        <td>
+
+                          none
+
+                        </td>
+
+                        <td>
+
+                          none
+
+                        </td>
+
+                        <td>
+
+                          none
+
+                        </td>
+
+                        <td style="background-color:#1dbf97; border-radius: 5px; " >
+
+                          <b style="text-color:blue;">la note est:</b>
+
+                          <span type="number"  id="tt"></span>
+
+                        </td>
+
+                        </tr>
+
+                      </tbody>
+
+                    </table>
+
+
+
+
+
+
+
+<style>
+
+.WebContainer{
+
+    width:100%;
+
+    min-width:1000px;
+
+    height:auto;
+
+}
+
+@media
+
+only screen and (max-width: 760px),
+
+(min-device-width: 768px) and (max-device-width: 1024px)  {
+
+
+
+	/* Force table to not be like tables anymore */
+
+	table, thead, tbody, th, td, tr {
+
+		display: block;
+
+	}
+
+
+
+	/* Hide table headers (but not display: none;, for accessibility) */
+
+	thead tr {
+
+		position: absolute;
+
+		top: -9999px;
+
+		left: -9999px;
+
+	}
+
+
+
+	tr { border: 1px solid #ccc; }
+
+
+
+	td {
+
+		/* Behave  like a "row" */
+
+		border: none;
+
+		border-bottom: 1px solid #eee;
+
+		position: relative;
+
+		padding-left: 50%;
+
+    width:80%
+
+    margin:auto;
+
+    align-self: center;
+
+
+
+	}
+
+
+
+	td:before {
+
+		/* Now like a table header */
+
+		position: absolute;
+
+		/* Top/left values mimic padding */
+
+		top: 6px;
+
+		left: 6px;
+
+		width: 45%;
+
+		padding-right: 10px;
+
+		white-space: nowrap;
+
+	}
+
+
+
+
+
+html, body
+
+    {
+
+      -ms-content-zooming:none;
+
+      touch-action: none;
+
+      content-zooming: none;
+
+       // hide vertical
+
+    overflow-x: hidden;
+
+ // hide vertical
+
+    overflow-x: none;
+
+    }rflow-style: none;
+
+
+
+
+
+}
+
+
+
+}
+
+</style>
+
+</body>
+
+
+
+</html>
