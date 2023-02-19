@@ -2,6 +2,7 @@
 
 <html lang="en" dir="ltr">
 
+
   <head>
 
      <link rel="icon" type="image/x-icon" href="icon.ico">
@@ -25,7 +26,7 @@
 
 <script src="bootstrap.bundle.min.js"></script>
 
-<script language="JavaScript" type="text/javascript" src="index2.js"></script>
+<script language="JavaScript" type="text/javascript" src="index.js"></script>
 <script>
     $(document).ready(function(){       
        
@@ -36,24 +37,18 @@ Swal.fire('هته الصفحة لا تعمل الان سيتم اطلاقها ي
 
   <body>
 
+   <nav class="navbar navbar-default mynav">
+ <table class="mynav">
+  <tr class="mynav">
+    <th>  <a class="navbar-brand " href="#">   <img style="width:1px height:1px;" src="sting.png"><b>ST Eng calculator</b></a></th>
+    <th>   <li class="active "><a href="index.html">sem1</a></li></th>
+    <th>  <li class=""><a href="s2.html">sem2</a></li></th>
+  </tr>
+      </table>
 
-
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-	  <a class="navbar-brand" href="#">   <img style="width:1px height:1px;" src="sting.png"><b>ST Eng calculator</b></a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-    <div class="navbar-nav">
-	    <a class="nav-item nav-link " href="/index.html"><b>sem 1</b> </a>
-      <a class="nav-item nav-link active" href="#"><b>sem 2</b></a>
-
-    </div>
-  </div>
+      
+  
 </nav>
-
-
-
 
 
 
@@ -391,11 +386,25 @@ Swal.fire('هته الصفحة لا تعمل الان سيتم اطلاقها ي
 
 
 
-
-
-
 <style>
+a:link, a:visited {
+  background-color: white;
+  color: black;
+  padding: 15px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
 
+a:hover, a:active {
+  background-color: #1dbf97;
+  text-color:white;
+}
+.mynav{
+padding: 10px;
+border-color: white;
+margin: auto;
+}
 .WebContainer{
 
     width:100%;
@@ -521,6 +530,7 @@ html, body
 }
 
 </style>
+
 </body>
 
 
