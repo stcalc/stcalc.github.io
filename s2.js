@@ -66,7 +66,6 @@ function calcu() {
 
 
 
-    var pro1ntd = Number(document.getElementById('pro1ntd').value) ;
 
   
 
