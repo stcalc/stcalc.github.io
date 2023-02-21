@@ -34,7 +34,7 @@ function calcu() {
 
   var info1tt = Number(document.getElementById('info1tt').value);
   
-  var des1tt = Number(document.getElementById('des1tt').value);
+
 
   
 
@@ -68,7 +68,7 @@ function calcu() {
 
 
   
-
+  var des1tt = Number(document.getElementById('des1tt').value);
 
 
 
