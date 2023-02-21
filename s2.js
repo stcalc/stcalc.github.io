@@ -70,9 +70,6 @@ function calcu() {
 
   
 
-    var pro1ctrl = Number(document.getElementById('pro1ctrl').value);
-
-    var pro1tt = document.getElementById('pro1tt').value = Number((((pro1ntd)*4)+(pro1ctrl*6))/10);
 
 
 
