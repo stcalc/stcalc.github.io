@@ -33,6 +33,8 @@ function calcu() {
 
 
   var info1tt = Number(document.getElementById('info1tt').value);
+  
+  var des1tt = Number(document.getElementById('des1tt').value);
 
   
 
@@ -87,7 +89,7 @@ function calcu() {
 
 
 
-      document.getElementById("tt").innerHTML = ((4*ph1tt)+(4*ch1tt)+(2*info1tt)+(2*alg1tt)+(3*ana1tt)+(2*pro1tt)+eng1tt+et1tt)/19;
+      document.getElementById("tt").innerHTML = ((4*ph1tt)+(4*ch1tt)+(2*info1tt)+(2*alg1tt)+(3*ana1tt)+(2*des1tt)+eng1tt+et1tt)/19;
 
 
 
