@@ -9,12 +9,11 @@
 
     <meta charset="utf-8">
 
-    <title>Semester 1</title>
+    <title>Semester 3</title>
 
     <!-- CSS only -->
 
     <script src="jquery.min.js"></script>
-   
 
 <link href="bootstrap.min.css" rel="stylesheet">
 
@@ -24,25 +23,25 @@
 
 <script src="bootstrap.bundle.min.js"></script>
 
-<script language="JavaScript" type="text/javascript" src="index.js"></script>
+<script language="JavaScript" type="text/javascript" src="s3.js"></script>
 
   </head>
 
   <body>
-
- <center>
-   <nav class="navbar navbar-expand-lg navbar-light bg-light ">
+	
+ <nav class="navbar navbar-expand-lg navbar-light bg-light ">
  <img  src="logo.png">
    
+ <a style=" border-radius: 15px;" href="index.html"><b>S1</b></a>
  <a style=" border-radius: 15px;" href="s2.html"><b>S2</b></a>
- <a style=" border-radius: 15px;" href="s3.html"><b>S3</b></a>
-    <a style=" border-radius: 15px;"href="" ><b>S4</b></a>
+    <a style=" border-radius: 15px;" href=""><b>S4</b></a>
 
 
       
   
 </nav>
- </center>
+
+
 
 
 
@@ -57,7 +56,7 @@
 
                           <th scope="col">la matiere</th>
 
-                          <th scope="col">la note td/20</th>
+                          <th scope="col">Note td</th>
 
                       
 
@@ -74,14 +73,49 @@
                       </thead>
 
                       <tbody>
+ <tr>
 
-                        <tr>
-
-                          <th scope="row">Phisique 1</th>
+                          <th scope="row">Analyse 3</th>
 
                         <td>
 
-                          <input type="number" class="form-control" placeholder="note td /20" onkeyup="calcu()" id="ph1ntd" >
+                          <input type="number" class="form-control" placeholder="note td /20" onkeyup="calcu()" id="ana3td" >
+
+                        </td>
+
+                    
+
+                        <td>
+
+                          <input type="number" class="form-control" placeholder="control /20" onkeyup="calcu()"  id="ana3ctrl">
+
+                        </td>
+
+                        <td>
+
+                        none
+
+                        </td>
+
+                    
+
+                        <td>
+
+                           <input type="number" class="form-control" placeholder="total analyse 3" onkeyup="calcu()" id="ana3tt">
+
+                        </td>
+
+                        </tr>
+    
+              
+
+                        <tr>
+
+                          <th scope="row">Analyse num</th>
+
+                        <td>
+
+                          <input type="number" class="form-control" placeholder="note td /20" onkeyup="calcu()" id="anantd" >
 
                         </td>
 
@@ -89,13 +123,13 @@
 
                         <td>
 
-                          <input type="number" class="form-control" placeholder="control /20" onkeyup="calcu()"  id="ph1ctrl">
+                          <input type="number" class="form-control" placeholder="control /20" onkeyup="calcu()"  id="ananctrl">
 
                         </td>
 
                         <td>
 
-                          <input type="number" class="form-control" placeholder="note TP /20" onkeyup="calcu()"  id="ph1ntp">
+                          <input type="number" class="form-control" placeholder="note TP /20" onkeyup="calcu()"  id="anantp">
 
                         </td>
 
@@ -103,7 +137,7 @@
 
                         <td>
 
-                           <input type="number" class="form-control" placeholder="total phi1" onkeyup="calcu()" id="ph1tt">
+                           <input type="number" class="form-control" placeholder="total anal num" onkeyup="calcu()" id="anantt">
 
                         </td>
 
@@ -111,11 +145,11 @@
 
                         <tr>
 
-                          <th scope="row">chimie 1</th>
+                          <th scope="row">Ondes vib</th>
 
                         <td>
 
-                          <input type="number" class="form-control" placeholder="note td /20" onkeyup="calcu()" id="ch1ntd" >
+                          <input type="number" class="form-control" placeholder="note td /20" onkeyup="calcu()" id="ovtd" >
 
                         </td>
 
@@ -123,27 +157,92 @@
 
                         <td>
 
-                          <input type="number" class="form-control" placeholder="control /20" onkeyup="calcu()"  id="ch1ctrl">
+                          <input type="number" class="form-control" placeholder="control /20" onkeyup="calcu()"  id="ovctrl">
 
                         </td>
 
                         <td>
 
-                          <input type="number" class="form-control" placeholder="note TP /20" onkeyup="calcu()"  id="ch1ntp">
+                          <input type="number" class="form-control" placeholder="note TP /20" onkeyup="calcu()"  id="ovtp">
 
                         </td>
 
 
                         <td>
 
-                           <input type="number" class="form-control" placeholder="total chimi1" onkeyup="calcu()" id="ch1tt">
+                           <input type="number" class="form-control" placeholder="total OV" onkeyup="calcu()" id="ovtt">
+
+                        </td>
+
+                        </tr>
+  <tr>
+
+                          <th scope="row">MDF</th>
+
+                        <td>
+
+                          <input type="number" class="form-control" placeholder="note td /20" onkeyup="calcu()" id="mdftd" >
+
+                        </td>
+
+                   
+
+                        <td>
+
+                          <input type="number" class="form-control" placeholder="control /20" onkeyup="calcu()"  id="mdfctrl">
+
+                        </td>
+
+                        <td>
+
+                          <input type="number" class="form-control" placeholder="note TP /20" onkeyup="calcu()"  id="mdftp">
+
+                        </td>
+
+
+                        <td>
+
+                           <input type="number" class="form-control" placeholder="total MDF" onkeyup="calcu()" id="mdftt">
 
                         </td>
 
                         </tr>
 
+                          <th scope="row">Mécanique rat</th>
+
+                        <td>
+
+                          <input type="number" class="form-control" placeholder="note td /20" onkeyup="calcu()" id="mrtd" >
+
+                        </td>
+
+                    
+
+                        <td>
+
+                          <input type="number" class="form-control" placeholder="control /20" onkeyup="calcu()"  id="mrctrl">
+
+                        </td>
+
+                        <td>
+
+                        none
+
+                        </td>
+
+                    
+
+                        <td>
+
+                           <input type="number" class="form-control" placeholder="total MR" onkeyup="calcu()" id="mrtt">
+
+                        </td>
+
+                        </tr>
+    
+              
                         <tr>
-                       <tr>
+          
 
                           <th scope="row">informatique</th>
 
@@ -169,116 +268,16 @@
 
                         <td>
 
-                           <input type="number" class="form-control" placeholder="note info /20" onkeyup="calcu()" id="info1tt">
+                           <input type="number" class="form-control" placeholder="note info /20" onkeyup="calcu()" id="infott">
 
                         </td>
 
                         </tr>
 
-                        <tr>
+                 
 
-                          <th scope="row">algebre 1</th>
-
-                        <td>
-
-                          <input type="number" class="form-control" placeholder="note td /20" onkeyup="calcu()" id="alg1ntd" >
-
-                        </td>
-
-
-                        <td>
-
-                          <input type="number" class="form-control" placeholder="control /20" onkeyup="calcu()"  id="alg1ctrl">
-
-                        </td>
-
-                        <td>
-
-                        none
-
-                        </td>
-
-                  
-
-                        <td>
-
-                           <input type="number" class="form-control" placeholder="total ALG 1" onkeyup="calcu()" id="alg1tt">
-
-                        </td>
-
-                        </tr>
-
-                        <tr>
-
-                          <th scope="row">analyse 1</th>
-
-                        <td>
-
-                          <input type="number" class="form-control" placeholder="note td /20" onkeyup="calcu()" id="ana1ntd" >
-
-                        </td>
-
-                    
-
-                        <td>
-
-                          <input type="number" class="form-control" placeholder="control /20" onkeyup="calcu()"  id="ana1ctrl">
-
-                        </td>
-
-                        <td>
-
-                        none
-
-                        </td>
-
-                    
-
-                        <td>
-
-                           <input type="number" class="form-control" placeholder="total analyse 1" onkeyup="calcu()" id="ana1tt">
-
-                        </td>
-
-                        </tr>
-
-                        <tr>
-
-                          <th scope="row">proba stat</th>
-
-                        <td>
-
-                          <input type="number" class="form-control" placeholder="note td /20" onkeyup="calcu()" id="pro1ntd" >
-
-                        </td>
-
-                     
-
-                        <td>
-
-                          <input type="number" class="form-control" placeholder="control /20" onkeyup="calcu()"  id="pro1ctrl">
-
-                        </td>
-
-                        <td>
-
-                        none
-
-                        </td>
-
-                     
-
-                        <td>
-
-                           <input type="number" class="form-control" placeholder="total proba" onkeyup="calcu()" id="pro1tt">
-
-                        </td>
-
-                        </tr>
-
-                        <tr>
-
-                          <th scope="row">englais</th>
+                       <tr>
+                          <th scope="row">Dessin (DAO)</th>
 
                         <td>
 
@@ -302,13 +301,15 @@
 
                         <td>
 
-                           <input type="number" class="form-control" placeholder="note englais /20" onkeyup="calcu()" id="eng1tt">
+                           <input type="number" class="form-control" placeholder="note DAO /20" onkeyup="calcu()" id="destt">
 
                         </td>
 
                         </tr>
 
-                          <th  scope="row">ethique</th>
+                        <tr>
+
+                          <th scope="row">Englais</th>
 
                         <td>
 
@@ -328,15 +329,17 @@
 
                         </td>
 
+                  
 
                         <td>
 
-                          <input type="number" class="form-control" placeholder="contrle ethique" onkeyup="calcu()" id="et1tt" >
+                           <input type="number" class="form-control" placeholder="note englais /20" onkeyup="calcu()" id="engtt">
 
                         </td>
 
                         </tr>
 
+                        
                         <tr>
 
                           <th  scope="row">total</th>
@@ -374,17 +377,15 @@
 
                     </table>
 
-
-
-
-
 <footer class="bg-dark text-center text-lg-start">
-  
+
   <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);color:#1dbf97;">
     by: yah04dev
   </div>
-
+ 
 </footer>
+
+
 
 <style>
 a:link, a:visited {
@@ -530,10 +531,8 @@ html, body
 }
 
 </style>
-
 </body>
 
 
 
 </html>
-
