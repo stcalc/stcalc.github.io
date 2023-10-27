@@ -84,9 +84,14 @@ function calcu() {
 
 
 
+ var engtd = Number(document.getElementById('engtd').value) ;
 
+   
 
-      var engtt = Number(document.getElementById('engtt').value);
+    var engctrl = Number(document.getElementById('engctrl').value);
+
+    var engtt = document.getElementById('engtt').value = Number((((engtd)*4)+(engctrl*6))/10);
+
 
 
 
