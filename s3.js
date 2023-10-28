@@ -101,7 +101,7 @@ function calcu() {
 
 
 
-      document.getElementById("tt").innerHTML = ((3*ana3tt)+(3*anantt)+(3*ovtt)+(3*mdftt)+(2*mrtt)+(2*infott)+(2*destt)+engtt)/19;
+      document.getElementById("tt").innerHTML = ((3*ana3tt)+(3*anantt)+(3*ovtt)+(3*mdftt)+(2*mrtt)+(2*infott)+(destt)+(2*engtt))/19;
 
 
 
