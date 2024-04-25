@@ -74,7 +74,7 @@ function calcu() {
 
 
 
-      document.getElementById("tt").innerHTML = ((3*electrott)+(3*electritt)+(3*anantt)+(3*rdmtt)+(3*tstt)+(2*caott)+(2*infott)+(2*mtrtt)+(termtt))/19;
+      document.getElementById("tt").innerHTML = ((2*electrott)+(2*electritt)+(3*anantt)+(3*rdmtt)+(2*tstt)+(2*caott)+(2*infott)+(2*mtrtt)+(termtt))/19;
 
 
 
