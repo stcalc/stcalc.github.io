@@ -1,0 +1,659 @@
+<!DOCTYPE html>
+
+<html lang="en" dir="ltr">
+
+
+  <head>
+
+     <link rel="icon" type="image/x-icon" href="icon.ico">
+
+    <meta charset="utf-8">
+
+    <title>قسنطينة برك</title>
+
+    <!-- CSS only -->
+
+    <script src="jquery.min.js"></script>
+   
+
+<link href="bootstrap.min.css" rel="stylesheet">
+
+<!-- JavaScript Bundle with Popper -->
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<script src="bootstrap.bundle.min.js"></script>
+
+<script language="JavaScript" type="text/javascript" src="index.js"></script>
+
+
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+  </head>
+
+  <body>
+<script>Swal.fire({html:"إنما الأمم الأخلاق ما بقيت...فإن هم ذهبت أخلاقهم ذهبوا </br>صلاح أمرك للأخلاق مرجعه...فقوم النفس بالأخلاق تستقم</br> إذا أصيب القوم في أخلاقهم...فأقم عليهم مأتما وعويلا"});</script>
+ <center>
+   <nav class="navbar navbar-expand-lg navbar-light bg-light ">
+ <img  src="logo.png">
+   
+ <a style=" border-radius: 15px;"><b>Electrotech</b></a>
+
+
+
+      
+  
+</nav>
+ </center>
+
+
+
+
+
+
+                    <table class="table table-dark table-borderless mb-0 table-responsive" class="thegrid"  >
+
+                      <thead>
+
+                        <tr>
+
+                          <th scope="col">la matiere</th>
+
+                          <th scope="col">la note td/20</th>
+
+                      
+
+                          <th scope="col">Controle</th>
+
+                          <th scope="col">Note TP</th>
+
+                        
+
+                            <th scope="col">la moyenne</th>
+
+                        </tr>
+
+                      </thead>
+
+                      <tbody>
+
+                        <tr>
+
+                          <th scope="row">Electro fund</th>
+
+                        <td>
+
+                          <input type="number" class="form-control" placeholder="note td /20" onkeyup="calcu()" id="efntd" >
+
+                        </td>
+
+                  
+
+                        <td>
+
+                          <input type="number" class="form-control" placeholder="control /20" onkeyup="calcu()"  id="efctrl">
+
+                        </td>
+
+                        <td>
+
+                
+
+                        </td>
+
+                     
+
+                        <td>
+
+                           <input type="number" class="form-control" placeholder="total EF" onkeyup="calcu()" id="eftt">
+
+                        </td>
+
+                        </tr>
+
+                        <tr>
+
+                          <th scope="row">Theory de champ</th>
+
+                        <td>
+
+                          <input type="number" class="form-control" placeholder="note td /20" onkeyup="calcu()" id="tcntd" >
+
+                        </td>
+
+                  
+
+                        <td>
+
+                          <input type="number" class="form-control" placeholder="control /20" onkeyup="calcu()"  id="tcctrl">
+
+                        </td>
+
+                        <td>
+
+                
+
+                        </td>
+
+                     
+
+                        <td>
+
+                           <input type="number" class="form-control" placeholder="total TC" onkeyup="calcu()" id="tctt">
+
+                        </td>
+
+                        </tr>
+
+                        <tr>
+
+                          <th scope="row">Elec de puissance</th>
+
+                        <td>
+
+                          <input type="number" class="form-control" placeholder="note td /20" onkeyup="calcu()" id="epntd" >
+
+                        </td>
+
+                  
+
+                        <td>
+
+                          <input type="number" class="form-control" placeholder="control /20" onkeyup="calcu()"  id="epctrl">
+
+                        </td>
+
+                        <td>
+
+                
+
+                        </td>
+
+                     
+
+                        <td>
+
+                           <input type="number" class="form-control" placeholder="total EP" onkeyup="calcu()" id="eptt">
+
+                        </td>
+
+                        </tr>
+
+                        <tr>
+
+                          <th scope="row">Transfert Therm</th>
+
+                        <td>
+
+                          <input type="number" class="form-control" placeholder="note td /20" onkeyup="calcu()" id="tthntd" >
+
+                        </td>
+
+                  
+
+                        <td>
+
+                          <input type="number" class="form-control" placeholder="control /20" onkeyup="calcu()"  id="tthctrl">
+
+                        </td>
+
+                        <td>
+
+                
+
+                        </td>
+
+                     
+
+                        <td>
+
+                           <input type="number" class="form-control" placeholder="total TT" onkeyup="calcu()" id="tthtt">
+
+                        </td>
+
+                        </tr>
+
+                        <tr>
+
+                          <th scope="row">Asserv 1</th>
+
+                        <td>
+
+                          <input type="number" class="form-control" placeholder="note td /20" onkeyup="calcu()" id="asvntd" >
+
+                        </td>
+
+                  
+
+                        <td>
+
+                          <input type="number" class="form-control" placeholder="control /20" onkeyup="calcu()"  id="asvctrl">
+
+                        </td>
+
+                        <td>
+
+                
+
+                        </td>
+
+                     
+
+                        <td>
+
+                           <input type="number" class="form-control" placeholder="total ASV1" onkeyup="calcu()" id="asvtt">
+
+                        </td>
+
+                        </tr>
+ <tr>
+                               <tr>
+
+                          <th scope="row">Logic C&S</th>
+
+                        <td>
+
+                          
+   <input type="number" class="form-control" placeholder="note tp /20" onkeyup="calcu()" id="lcsntd" >
+                        </td>
+
+
+                        <td>
+
+                          <input type="number" class="form-control" placeholder="control /20" onkeyup="calcu()"  id="lcsctrl">
+
+                        </td>
+
+                        <td>
+
+                      
+
+                        </td>
+
+                  
+
+                        <td>
+
+                           <input type="number" class="form-control" placeholder="total LCS" onkeyup="calcu()" id="lcstt">
+
+                        </td>
+
+                        </tr>
+  <tr>
+
+                          <th scope="row">Methodes Num</th>
+
+                        <td>
+
+                          
+
+                        </td>
+
+
+                        <td>
+
+                          <input type="number" class="form-control" placeholder="control /20" onkeyup="calcu()"  id="mnctrl">
+
+                        </td>
+
+                        <td>
+
+                         <input type="number" class="form-control" placeholder="note tp /20" onkeyup="calcu()" id="mnntp" >
+
+                        </td>
+
+                  
+
+                        <td>
+
+                           <input type="number" class="form-control" placeholder="total MN" onkeyup="calcu()" id="mntt">
+
+                        </td>
+
+                        </tr>
+<tr>
+                          <th  scope="row">TP Asserv</th>
+
+                        <td>
+
+                           
+
+                        </td>
+
+                        <td>
+
+                           
+
+                        </td>
+
+                        <td>
+                        <input type="number" class="form-control" placeholder="Note TP asservissment" onkeyup="calcu()" id="tpasvtt" >
+
+                           
+
+                        </td>
+
+
+                        <td>
+
+                          
+                        </td>
+
+                        </tr>
+<tr>
+                          <th  scope="row">TP elec de pui</th>
+
+                        <td>
+
+                           
+
+                        </td>
+
+                        <td>
+
+                           
+
+                        </td>
+
+                        <td>
+                        <input type="number" class="form-control" placeholder="Note TP elec de pui" onkeyup="calcu()" id="tpeptt" >
+
+                           
+
+                        </td>
+
+
+                        <td>
+
+                          
+                        </td>
+
+                        </tr>
+<tr>
+                          <th  scope="row">TP logic c&s</th>
+
+                        <td>
+
+                           
+
+                        </td>
+
+                        <td>
+
+                           
+
+                        </td>
+
+                        <td>
+                        <input type="number" class="form-control" placeholder="Note TP logic" onkeyup="calcu()" id="tplcstt" >
+
+                           
+
+                        </td>
+
+
+                        <td>
+
+                          
+                        </td>
+
+                        </tr>
+<tr>
+                          <th  scope="row">TP electro fund</th>
+
+                        <td>
+
+                           
+
+                        </td>
+
+                        <td>
+
+                           
+
+                        </td>
+
+                        <td>
+                        <input type="number" class="form-control" placeholder="Note TP EF" onkeyup="calcu()" id="tpeftt" >
+
+                           
+
+                        </td>
+
+
+                        <td>
+
+                          
+                        </td>
+
+                        </tr>
+<tr>
+                          <th  scope="row">English</th>
+
+                        <td>
+
+                           
+                        <input type="number" class="form-control" placeholder="Note TD eng" onkeyup="calcu()" id="eng1tt" >
+                        </td>
+
+                        <td>
+
+                           
+
+                        </td>
+
+                        <td>
+                        
+
+                           
+
+                        </td>
+
+
+                        <td>
+
+                          
+                        </td>
+
+                        </tr>
+                      
+
+                        <tr>
+
+                          <th  scope="row">total</th>
+
+
+                        <td>
+
+                           
+
+                        </td>
+
+                        <td>
+
+                           
+
+                        </td>
+
+                        <td>
+
+                           
+
+                        </td>
+
+                        <td style="background-color:#1dbf97; border-radius: 5px; " >
+
+                          <b style="text-color:blue;">la note est:</b>
+
+                          <span type="number"  id="tt"></span>
+
+                        </td>
+
+                        </tr>
+
+                      </tbody>
+
+                    </table>
+
+
+
+
+
+<footer class="bg-dark text-center text-lg-start">
+  
+  <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);color:#1dbf97;">
+    by: yah04dev
+  </div>
+
+</footer>
+<style>
+a:link, a:visited {
+  background-color: #f8f9fa;
+  color: black;
+  padding: 15px 25px;
+  text-align: center;
+  text-decoration:  ;
+  display: inline-block;
+}
+
+a:hover, a:active {
+  background-color: #1dbf97;
+  color:white;
+}
+.mynav{
+padding: 10px;
+border-color: #f8f9fa;
+margin: auto;
+}
+.WebContainer{
+
+    width:100%;
+
+    min-width:1000px;
+
+    height:auto;
+
+}
+
+@media
+
+only screen and (max-width: 760px),
+
+(min-device-width: 768px) and (max-device-width: 1024px)  {
+
+
+
+	/* Force table to not be like tables anymore */
+
+	table, thead, tbody, th, td, tr {
+
+		display: block;
+
+	}
+
+
+
+	/* Hide table headers (but not display:  ;, for accessibility) */
+
+	thead tr {
+
+		position: absolute;
+
+		top: -9999px;
+
+		left: -9999px;
+
+	}
+
+
+
+	tr { border: 1px solid #ccc; }
+
+
+
+	td {
+
+		/* Behave  like a "row" */
+
+		border:  ;
+
+		border-bottom: 1px solid #eee;
+
+		position: relative;
+
+		padding-left: 50%;
+
+    width:80%
+
+    margin:auto;
+
+    align-self: center;
+
+
+
+	}
+
+
+
+	td:before {
+
+		/* Now like a table header */
+
+		position: absolute;
+
+		/* Top/left values mimic padding */
+
+		top: 6px;
+
+		left: 6px;
+
+		width: 45%;
+
+		padding-right: 10px;
+
+		white-space: nowrap;
+
+	}
+
+
+
+
+
+html, body
+
+    {
+
+      -ms-content-zooming: ;
+
+      touch-action:  ;
+
+      content-zooming:  ;
+
+       // hide vertical
+
+    overflow-x: hidden;
+
+ // hide vertical
+
+    overflow-x:  ;
+
+    }rflow-style:  ;
+
+
+
+
+
+}
+
+
+
+}
+
+</style>
+
+</body>
+
+
+
+</html>
+
