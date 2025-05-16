@@ -2,6 +2,7 @@ const rows = document.querySelectorAll("tbody tr");
 
   // تحميل القيم من Local Storage عند بداية الصفحة
   window.addEventListener("DOMContentLoaded", () => {
+    localStorage.clear();
     rows.forEach((row, index) => {
       ["td", "tp", "exam"].forEach(type => {
         const input = row.querySelector("." + type);
